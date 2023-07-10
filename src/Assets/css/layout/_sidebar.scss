@@ -1,0 +1,27 @@
+.sidebar{
+  position: fixed;
+  right: -$sidebar-width - 2px;
+  height: 100vh;
+  border-left: 1px solid #d0d0d0;
+  top: 0;
+  width: $sidebar-width;
+  padding-bottom: 15px;
+  background: $sidebar-background;
+  z-index: $sidebar-z-index;
+  transition: $backdrop-transition;
+  overflow-y: auto;
+  &.open{
+    right: 0;
+  }
+  &__title{
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    img{
+      height: 50px;
+      width: 50px;
+      cursor: pointer;
+    }
+  }
+}

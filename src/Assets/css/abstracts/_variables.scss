@@ -1,0 +1,29 @@
+
+//body
+$body-bg: white;
+$direction-base: left;
+
+//typography
+$font-size-base: 1.6rem;
+$font-family-base: Futura;
+
+$zindex-sidebar: 1090;
+$zindex-header: 1080;
+$zindex-alert: 1095;
+
+//backdrop
+$backdrop-background-color: black;
+$backdrop-transition: .3s ease;
+$backdrop-opacity--open: 0.5;
+
+
+//sidebar
+$sidebar-width: 370px;
+$sidebar-z-index: $zindex-sidebar;
+$sidebar-background: #f8f8f8;
+$sidebar-transition: $backdrop-transition;
+$sidebar-box-background: white;
+$sidebar-list-color: black;
+$sidebar-list--after-background: black;
+$sidebar-list--active: green;
+$sidebar-icon-color: white;

@@ -1,0 +1,11 @@
+// -----------------------------------------------------------------------------
+// This file contains all @Font-face declarations, if any.
+// -----------------------------------------------------------------------------
+@font-face {
+  font-family: Futura;
+  src: local("Futura"), url('./src/Assets/fonts/Futura Heavy font.ttf');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+

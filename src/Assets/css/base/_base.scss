@@ -1,0 +1,34 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+*:focus {
+  outline: 0 !important;
+}
+
+
+body {
+  font-family: $font-family-base;
+  scroll-behavior: smooth;
+  position: relative;
+  direction: $direction-base;
+  background-color: $body-bg;
+}
+
+ul {
+  margin: 0 !important;
+  padding: 0 !important;
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+ol, ul {
+  padding: 0;
+}
