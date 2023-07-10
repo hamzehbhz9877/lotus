@@ -1,3 +1,10 @@
+.input  {
+  color: #0B7171;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 44px;
+}
+
 .header {
   padding: 0 89px;
 
@@ -43,6 +50,10 @@
         border: 1px solid #CFCFCF;
         border-radius: 22px;
         padding: 0 22px;
+        @extend .input;
+        &:focus{
+          border: 1px solid #686868;
+        }
 
         &::-webkit-input-placeholder { /* Edge */
           color: #0B7171;
@@ -53,10 +64,7 @@
         }
 
         &::placeholder {
-          color: #0B7171;
-          font-size: 15px;
-          font-weight: bold;
-          line-height: 44px;
+          @extend .input;
         }
       }
     }

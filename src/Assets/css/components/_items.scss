@@ -64,6 +64,9 @@
           background-color: #23A0A5;
           border-radius: 50%;
           position: relative;
+          &:hover{
+            box-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(0,0,0,.23);
+          }
 
           img {
             left: 50%;
@@ -226,7 +229,9 @@
           background-color: #23A0A5;
 
           border-radius: 50%;
-
+          &:hover{
+            box-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(0,0,0,.23);
+          }
           img {
             margin: auto
           }

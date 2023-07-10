@@ -2,7 +2,7 @@ import React from 'react';
 import Header from "../../Layout/main/header/index";
 
 type Props={
-    children:React.node
+    children:React.ReactNode
 }
 const MainLayout = ({children}:Props) => {
     return (

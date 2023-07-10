@@ -1,11 +1,10 @@
 import ItemsLeft from "../../Components/items/itemsLeft";
+import cardImage from "../../Assets/images/JAR.png";
 import ItemsRight from "../../Components/items/itemsRight";
 import MainLayout from "../../Layout/main/index";
 import rec from "../../Assets/images/oa/Rectangle.svg";
-import cardImage from "../../Assets/images/JAR (1).svg";
 import rightImg from "../../Assets/images/Bitmap.svg";
 import {useCartStore} from "../../Store/cart";
-import React from "react";
 import Shopping from "../../Components/shopping/shopping";
 import SideBar from "../../Layout/main/sidebar/index";
 import Backdrop from "../../Components/backdrop/backdrop";
@@ -47,7 +46,7 @@ const Home = () => {
                         </div>
                     </div>
                     <div className="items__left-cards">
-                        {itemsLeft.map(item=><ItemsLeft  {...item}/>)}
+                        {itemsLeft.map(item=><ItemsLeft key={item.id}  {...item}/>)}
                     </div>
                 </div>
                 <div className="items__right">
@@ -55,14 +54,20 @@ const Home = () => {
                         <span>More Items</span>
                     </div>
                     <div className="items__right-cards">
-                        {itemRight.map(item=><ItemsRight {...item}/>)}
+                        {itemRight.map(item=><ItemsRight key={item.id} {...item}/>)}
                     </div>
                 </div>
             </MainLayout>
                 <SideBar title={"Cart"}>
                     <div className="shopping-sidebar">
-                        {items.length===0&& <img src={emptyCart} alt=""/>}
-                        {items.map(data=><Shopping {...data}/>)}
+                        {items.length===0&& <img className="empty-cart" src={emptyCart} alt=""/>}
+                        {items.map(item=><Shopping key={item.id} {...item}/>)}
+                        {
+                            items.length!==0&&
+                            <div className="shopping__total">
+                                <h3>Total is: {items.reduce((acc,item)=>item.total+acc,0)}$</h3>
+                            </div>
+                        }
                     </div>
                 </SideBar>
             <Backdrop/>

@@ -4,7 +4,7 @@ import closeIcon from "../../../Assets/images/close-sharp.svg"
 
 
 type Props={
-    children:React.node,
+    children:React.ReactNode,
     title:string
 }
 

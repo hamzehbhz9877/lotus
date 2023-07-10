@@ -1,4 +1,3 @@
-import React from 'react';
 import basket from "../../../Assets/images/basket.jpg"
 import search from "../../../Assets/images/search.png"
 import {useCartStore} from "../../../Store/cart";

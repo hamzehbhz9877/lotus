@@ -1,4 +1,3 @@
-import React from 'react';
 import Right from "../../../Layout/main/header/right";
 import Left from "../../../Layout/main/header/left";
 

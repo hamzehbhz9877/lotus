@@ -1,7 +1,5 @@
-import React from 'react';
 import plus from "../../Assets/images/icons8-plus-50.png"
 import {useCartStore} from "../../Store/cart";
-import {useSidebarStore} from "../../Store/sidebar";
 
 type Props={
     title:string
@@ -13,11 +11,7 @@ type Props={
 
 const ItemsRight = ({title,img,price,subtitle,id}:Props) => {
     const {addItems}=useCartStore()
-    const {open}=useSidebarStore()
-    const handleOpen=()=>{
-        open()
-        addItems({title,img,price,id})
-    }
+    const handleOpen=()=>addItems({title,img,price,id})
     return (
         <div className="items__right-card" >
             <div className="items__right-card-body">

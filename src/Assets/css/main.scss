@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 // 1. Configuration and helpers
-@import 'abstracts';
+@import 'abstracts/index';
 
 // 2. Vendors
 //@import 'vendors/normalize';
@@ -13,7 +13,7 @@
 @import 'layout/header', 'layout/sidebar', 'layout/main';
 
 // 5. Components
-@import 'components/items','components/backdrop','components/shoppingItems';
+@import 'components/items', 'components/backdrop', 'components/shoppingItems';
 
 // 7. Themes
 @import 'themes/default';
